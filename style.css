@@ -1,0 +1,325 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    height: 100%;
+    margin: 0;
+}
+
+/****header style*****/
+#heading{
+    position: relative;
+    height: 55px;
+    z-index: 1;
+    background-color: beige;
+
+}
+
+#logo{
+    position: absolute;
+    top: 5.5px;
+    display: inline;
+    left: 15%;
+}
+
+#logo img{
+    width:43px;
+    height:43px;
+}
+
+.links{
+    position: absolute;
+    display: inline;
+    right: 15%;
+}
+
+ul{
+    display: flex;
+    margin-top: 15px;
+}
+
+li{
+    list-style: none;
+    margin-left: 15px;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.liLink:hover{
+    color: #5392f9;
+    transition: all .2s ease;
+}
+
+
+.liLink{
+    text-decoration: none;
+    color: rgba(0,0,0,.75);
+}
+
+/**Product Section**/
+#ourProduct{
+    background-color: #f4f4f4;
+    height: 35%;
+    padding-top: 10px;
+    position: relative;
+    text-align: center;
+    top: -21px;
+    width: 100%;
+}
+
+.our{
+    display: inline;
+    height: 60%;
+    position: absolute;
+    width: 9%;
+}
+
+#our1{
+    left:15%;
+}
+
+#our2{
+    left: 30%;
+}
+
+#our3{
+    left: 45%;
+}
+
+#our4{
+    left: 60%
+}
+
+#our5{
+    left: 75%;
+}
+
+.ourText{
+    font-size: 1.25rem;
+    font-weight: 600;
+    position: relative;
+    top: 10px;
+}
+
+.image{
+    border-radius: 20px;
+    width: 100%;
+}
+
+
+/**Why Section**/
+
+#whyVlog{
+    height: 58%;
+    position: relative;
+    text-align: center;
+    top: -20px;
+}
+
+#whyHeading{
+    margin: 0;
+    padding-top: 20px;
+}
+
+#whyPart{
+    color: #999999;
+    font-weight: 600;
+    left: 20%;
+    position: absolute;
+    line-height: 25px;
+    padding-top: 30px;
+    width: 60%;
+}
+
+.why{
+    display:inline;
+    height: 20%;
+    position: absolute;
+    margin-left: 20px;
+    width: 30%;
+}
+
+.why img{
+    left: 0;
+    position: absolute;
+    height: 100%;
+}
+
+.why div{
+    color: #999999;
+    font-weight: 600;
+    left: 30%;
+    position: absolute;
+    text-align: left;
+    width: 80%;
+}
+
+#whyText h2{
+    color: black;
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+#whyText span{
+    position: absolute;
+    top: 130%;
+    line-height: 20px; 
+}
+
+#why1{
+    left: 18%;
+    top: 45%;
+}
+#why2{
+    left: 50%;
+    top: 45%;
+}
+#why3{
+    left: 18%;
+    top: 70%;
+}
+#why4{
+    left: 50%;
+    top: 70%;
+}
+/**Responsive**/
+@media screen and (max-width: 1200px){
+    .why{
+        width: 60%;
+    }
+
+    #why1{
+        top: 55%;
+    }
+
+    #why2{
+        left: 18%;
+        top: 80%;
+    }
+
+    #why3{
+        left: 18%;
+        top: 105%;
+    }
+
+    #why4{
+        left: 18%;
+        top: 130%;
+    }
+
+    #whyText{
+        left: 20%;
+    }
+
+    .why img{
+        height: 75%;
+    }
+}
+@media screen and (max-width: 950px) and (min-width: 550px){
+
+    #ourProduct{
+        height: 35%;
+    }
+
+    .our{
+        width: 15%;
+    }
+
+    #our1{
+        left: 8%;
+    }
+
+    #our2{
+        left: 25%;
+    }
+
+    #our3{
+        left: 42%;
+    }
+    #our4{
+        left: 59%;
+    }
+    #our5{
+        left: 76%;
+    }
+
+    #whyText{
+        left: 35%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .links{
+        position: absolute;
+        display: inline;
+        right: 3%;
+        transition: 0.2s ease-in;
+    }
+
+    #logo{
+        left: 5%;
+        transition: 0.2s ease-in;
+    }
+}
+
+@media screen and (max-width: 741px) {
+
+    li{
+        margin-left: 13px;
+        font-size: 15px;
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    li{
+        margin-left: 13px;
+        font-size: 14px;
+        font-weight: 700;
+        right: 2%;
+    }
+
+    #ourProduct{
+        height: 60%;
+    }
+
+    .our{
+        width: 20%;
+    }
+
+    #our1{
+        left: 20%;
+    }
+
+    #our2{
+        left: 65%;
+    }
+
+    #our3{
+        left: 42%;
+        top: 45%;
+    }
+    #our4{
+        left: 20%;
+        top: 73%;
+    }
+    #our5{
+        left: 65%;
+        top: 73%;
+    }
+
+    #whyText{
+        left: 50%;
+    }
+    
+}
+
+@media screen and (max-width: 475px) {
+    li{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    li{
+        font-size: 10px;
+    }
+}
